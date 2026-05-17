@@ -55,7 +55,7 @@ Antes de ejecutar el proyecto necesitas:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/wordpress-docker-project.git
+git clone https://github.com/EnriqueFernandez-dam/wordpress-docker-project.git
 cd wordpress-docker-project
 ```
 
@@ -81,7 +81,7 @@ Este comando:
 Abrir en el navegador:
 
 ```
-http://localhost:8080
+http://localhost:8081
 ```
 
 ---
@@ -146,7 +146,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/jammy64"
 
-  config.vm.network "forwarded_port", guest: 8080, host: 8080
+  config.vm.network "forwarded_port", guest: 8080, host: 8081
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = 2048
